@@ -13,7 +13,7 @@ def tr_list_to_json_list(tr_list: list[Tag]) -> list[dict]:
                 "time": td_list[1].getText(),
                 "subject_name": td_list[2].getText(),
                 "type": td_list[3].getText(),
-                "professor_name": professor_name,
+                "professor_name": professor_name.strip(),
                 "professor_page_link": link,
                 "rescheduled_info": None,
                 "place": td_list[5].getText(),
